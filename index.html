@@ -1,114 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanuj | Writings</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<title>Tanuj | Writings</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0e0e0e;
-      color: #eaeaea;
-      line-height: 1.6;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-    header {
-      padding: 40px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      font-size: 28px;
-    }
+body {
+  background: #0c0c0c;
+  color: #eaeaea;
+  font-family: 'Inter', sans-serif;
+}
 
-    nav a {
-      color: #ccc;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8%;
+  position: fixed;
+  width: 100%;
+  background: rgba(12,12,12,0.8);
+  backdrop-filter: blur(10px);
+}
 
-    nav a:hover {
-      color: #fff;
-    }
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+}
 
-    .hero {
-      padding: 120px 10%;
-      text-align: center;
-    }
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+}
 
-    .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      max-width: 700px;
-      margin: auto;
-    }
+nav a:hover {
+  color: #fff;
+}
 
-    .hero p {
-      margin-top: 20px;
-      color: #aaa;
-    }
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
 
-    .section {
-      padding: 80px 10%;
-    }
+.hero h2 {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  max-width: 800px;
+}
 
-    .section h3 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 30px;
-    }
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
 
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+.btn:hover {
+  background: white;
+  color: black;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+/* SECTION */
+.section {
+  padding: 100px 8%;
+}
 
-    .card h4 {
-      margin-bottom: 10px;
-    }
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
 
-    footer {
-      padding: 40px 10%;
-      text-align: center;
-      color: #777;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
 
-    .cta {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid #fff;
-      text-decoration: none;
-      color: #fff;
-      transition: 0.3s;
-    }
+.card {
+  padding: 25px;
+  background: #151515;
+  border-radius: 12px;
+  transition: 0.3s;
+}
 
-    .cta:hover {
-      background: #fff;
-      color: #000;
-    }
-  </style>
+.card:hover {
+  transform: translateY(-8px);
+  background: #1d1d1d;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+</style>
 </head>
 
 <body>
@@ -118,36 +134,70 @@
   <nav>
     <a href="#about">About</a>
     <a href="#writings">Writings</a>
-    <a href="#blog">Blog</a>
+    <a href="#blog">Essays</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>I write what silence cannot hold.</h2>
-  <p>Poetry. Reflections. Culture. Thought.</p>
-  <a href="#writings" class="cta">Explore Writings</a>
+  <div>
+    <h2>I write what silence cannot hold.</h2>
+    <p>Poetry. Thought. Cinema. Spiritual reflection.</p>
+    <a href="#writings" class="btn">Enter</a>
+  </div>
 </section>
 
 <section id="about" class="section">
   <h3>About</h3>
   <p>
     I don’t write to impress. I write to understand.
-    Somewhere between cinema, spirituality, and silence—
-    I found words that stayed.
-    This space is where I leave them.
+    Somewhere between cinema, silence, and the search for meaning—
+    I found something that stayed.
+    This is where I leave it.
   </p>
 </section>
 
 <section id="writings" class="section">
   <h3>Writings</h3>
-  <div class="cards">
+  <div class="grid">
     <div class="card">
       <h4>Poetry</h4>
       <p>Fragments of feeling, shaped into words.</p>
     </div>
     <div class="card">
       <h4>Reflections</h4>
-      <p>On life, identity, and the quiet chaos within.</p>
+      <p>On identity, silence, and the inner world.</p>
     </div>
     <div class="card">
+      <h4>Cultural Commentary</h4>
+      <p>Films, society, and the stories we live inside.</p>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <h3>Featured Essays</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>The Weight of Silence</h4>
+      <p>What we don’t say shapes who we become.</p>
+    </div>
+    <div class="card">
+      <h4>Stories We Live By</h4>
+      <p>Why cinema reflects our inner worlds.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h3>Contact</h3>
+  <p>Collaborations, writing, or conversations.</p>
+  <a href="mailto:your@email.com" class="btn">Reach Out</a>
+</section>
+
+<footer>
+  <p>© 2026 Tanuj. Built with intent.</p>
+</footer>
+
+</body>
+</html>
